@@ -17,8 +17,12 @@ img {
   font-size: 50px;
   font-weight: 400;
 }
+.titoli span.thin {
+  font-weight: 400;
+}
 
-.titoli strong {
+.titoli span.bold {
+  font-weight: bold;
   display: block;
 }
 
@@ -41,21 +45,26 @@ img {
   padding-left: 20px;
 }
 
+.punti li strong {
+  font-weight: bold;
+  color: white; /* Cambia il colore a tuo piacimento */
+  /* Altri stili personalizzati se necessario */
+}
+
 .prosegui {
   background-color: #03ffff;
   border-style: none;
   float: right;
-
   margin-left: 200px;
 }
 #promessa {
   opacity: 0.2;
   margin-right: 10px;
 }
+
 .prosegui a {
   display: inline-block;
   padding: 15px 50px;
-
   color: black;
   text-decoration: none;
   font-size: 16px;
