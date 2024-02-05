@@ -2,6 +2,8 @@
   box-sizing: border-box;  
 }
 
+/* base */
+
 body, h1, h2, h3, h4, h5, h6, p, div{
 margin: 0;
 }
@@ -18,11 +20,16 @@ body{
         color: white;
 }
 
+
+/* header */
+
 header img{
-    width: 10%;
+    width: 11rem;
     margin-block-start:  2rem;
     margin-inline-start:  8rem;
 }
+
+/* main */
 
 main, footer{
     width: 70%;
@@ -33,7 +40,8 @@ main, footer{
 .container{
     display: inline-block;
     width: 30%;
-    margin-block-start: 8rem;
+    margin-block-start: 4rem;
+   
 }
 
 h1{
@@ -44,23 +52,78 @@ h1{
 h4{
     font-size: 1.5rem;
     font-weight: 400;
-    margin-block-start: 0.25rem;
 }
 
+/* correct/wrong */
 
-button{
+.container h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-block: 0;
+}
+
+.container h3{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-block: 0;
+}
+.container p{
     font-size: 1rem;
-    margin-block-start: 8rem;
-    padding-block: 1rem;
-    padding-inline: 3rem;
+    font-weight: 400;
+    margin-block: 0;
 
 }
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+/* percentual */
 
 .circle{
     border-radius: 50%;
-    border: 2rem solid black;
 }
 
 .circle h4{
-    margin: 1rem
+    margin-block-start: 1.25rem;
+    font-size: 1.25rem;
+
+}
+
+.circle h3{
+    margin-block-end: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #00ffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.circle p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.659);
+}
+
+.circle div{
+    width: 60%;
+    margin-inline: auto;
+    
+}
+
+/* footer */
+
+button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-block-start: 4rem;
+    padding-block: 1rem;
+    padding-inline: 4rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+
 }
