@@ -31,18 +31,26 @@ img {
   height: 80px;
   width: 400px;
 }
+
 .punti {
   height: 150px;
+  margin-top: 20px;
+}
+
+.punti ul {
+  padding-left: 20px;
 }
 
 .prosegui {
   background-color: #03ffff;
   border-style: none;
   float: right;
-  margin-right: 150px;
+
+  margin-left: 200px;
 }
 #promessa {
   opacity: 0.2;
+  margin-right: 10px;
 }
 .prosegui a {
   display: inline-block;
@@ -58,4 +66,6 @@ img {
 
 .caselle {
   height: 20px;
+  display: flex;
+  align-items: center;
 }
