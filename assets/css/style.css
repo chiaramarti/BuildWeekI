@@ -1,0 +1,61 @@
+body {
+  background-image: url(/assets/img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 50px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo1 {
+  max-width: 150px;
+}
+.titoli {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.titoli strong {
+  display: block;
+}
+
+.sottotitoli {
+  color: #c2138c;
+  font-size: 30px;
+  margin: 0;
+}
+.descrizione {
+  height: 80px;
+  width: 400px;
+}
+.punti {
+  height: 150px;
+}
+
+.prosegui {
+  background-color: #03ffff;
+  border-style: none;
+  float: right;
+  margin-right: 150px;
+}
+#promessa {
+  opacity: 0.2;
+}
+.prosegui a {
+  display: inline-block;
+  padding: 15px 50px;
+
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 20px 5px #03ffff;
+}
+
+.caselle {
+  height: 20px;
+}
