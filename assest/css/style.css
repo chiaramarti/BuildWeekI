@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-image: url(bg.jpg);
+}
+
+#container {
+  width: 100%;
+}
+
+#container img {
+  width: 20rem;
+}
