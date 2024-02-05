@@ -16,8 +16,7 @@ body{
     background-attachment: fixed;
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Outfit', sans-serif;
-
-        color: white;
+    color: white;
 }
 
 
@@ -26,70 +25,83 @@ body{
 header img{
     width: 11rem;
     margin-block-start:  2rem;
-    margin-inline-start:  8rem;
+    margin-inline-start:  6rem;
 }
 
 /* main */
 
-main, footer{
+#title-result, #rate-us{
     width: 70%;
     margin-inline: auto;
     text-align: center;
 }
 
-.container{
+.container-results{
     display: inline-block;
     width: 30%;
-    margin-block-start: 4rem;
-   
+    margin-block-start: 3rem;
 }
 
-h1{
+#title-result h1{
     font-size: 3rem;
     margin-block-start: 4rem;
 }
 
-h4{
-    font-size: 1.5rem;
+#title-result h4{
+    font-size: 1rem;
     font-weight: 400;
 }
 
 /* correct/wrong */
 
-.container h2{
+.container-results h2{
     font-size: 3rem;
     font-weight: 400;
     margin-block: 0;
 }
 
-.container h3{
+.container-results h3{
     font-size: 3.5rem;
     font-weight: 600;
     margin-block: 0;
 }
-.container p{
+
+.container-results p{
     font-size: 1rem;
     font-weight: 400;
     margin-block: 0;
-
 }
 
 .left{
     text-align: left;
+    vertical-align: middle;
 }
 
 .right{
     text-align: right;
+    vertical-align: middle;
 }
 
-/* percentual */
+/* percentage */
 
 .circle{
     border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    vertical-align: middle;
+
+}
+.fail{
+    border: 2.5rem solid #900080;
+
+}
+.pass{
+    border: 2.5rem solid #00ffff;
+
 }
 
 .circle h4{
-    margin-block-start: 1.25rem;
+    margin-block-start: 2.25rem;
     font-size: 1.25rem;
 
 }
@@ -108,22 +120,21 @@ h4{
 }
 
 .circle div{
-    width: 60%;
+    width: 80%;
     margin-inline: auto;
-    
+    padding-block: 1.75rem;
 }
 
 /* footer */
 
-button{
+#rate-us button{
     font-size: 1.25rem;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
-    margin-block-start: 4rem;
+    margin-block: 4rem;
     padding-block: 1rem;
     padding-inline: 4rem;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-
 }
