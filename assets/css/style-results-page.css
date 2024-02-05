@@ -60,7 +60,7 @@ header img{
     margin-block: 0;
 }
 
-.container-results h3{
+.container-results h3, #number{
     font-size: 3.5rem;
     font-weight: 600;
     margin-block: 0;
@@ -85,20 +85,44 @@ header img{
 /* percentage */
 
 .circle{
-    border-radius: 50%;
-    height: 350px;
-    width: 350px;
+    height: 380px;
+    width: 380px;
     vertical-align: middle;
-
+    position: relative;
 }
-.fail{
-    border: 2.5rem solid #900080;
 
-}
-.pass{
-    border: 2.5rem solid #00ffff;
+.pass {
+    margin-inline: auto;
+    border-radius: 50%;
+    height: 339px;
+    width: 339px;
+    border: 30px solid #00ffff;
+  }
 
-}
+/* animation */
+
+  circle {
+    fill: none;
+    stroke: #900080;
+    stroke-width: 30px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: anim 2s linear forwards;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @keyframes anim {
+    100% {
+        /* lo troviamo facendo 1000-1000x66.7 */
+      stroke-dashoffset: 330;
+    }
+  }
 
 .circle h4{
     margin-block-start: 2.25rem;
@@ -119,10 +143,10 @@ header img{
     color: rgba(255, 255, 255, 0.659);
 }
 
-.circle div{
-    width: 80%;
+.description {
     margin-inline: auto;
-    padding-block: 1.75rem;
+    padding-block: 2rem;
+    width: 250px;
 }
 
 /* footer */
