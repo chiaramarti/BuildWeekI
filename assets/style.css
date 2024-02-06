@@ -53,6 +53,12 @@ h4{
     font-weight: 400;
 }
 
+  
+
+/*___________________________
+_______ MAIN FEEDBACK _______
+_____________________________
+ */
 .feedback p {
     margin: 0.5em auto 1em;
     max-width: 570px;
@@ -91,10 +97,14 @@ h4{
     margin-top: 2em;
 }
 
+ /*  FEEDBACK BUTTON  */
 
-/* footer */
-  
-button{
+ #feedbackForm button a{
+    text-decoration: none;
+    color: #30235e;
+}
+
+#feedbackForm button{
     text-transform: uppercase;
     font-size: 1.25rem;
     font-weight: 600;
@@ -108,24 +118,30 @@ button{
     box-shadow: 1px 1px #00FFFF, 0 0 25px #00FFFF;
 }
 
-button:hover{
+#feedbackForm button:hover{
     background-color: #d20094;
     box-shadow: 1px 1px #d20094, 0 0 25px #d20094;
     transition-duration: 3ms;
     cursor: pointer;
 }
-  
 
+/* _______________________________________
+___________THANK YOU______________________
+___________________________________________ */
 
-/* prova 
-.prova{
-    width: 300px;
-    height: 80px;
-    border: double 4px transparent;
-    border-radius: 80px;
-    background-image: linear-gradient(rgba(141, 0, 96, 0.211), rgba(141, 0, 125, 0.211)), radial-gradient(circle at top left, rgba(246, 246, 246, 0.633),#65656544);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-color: transparent;
-    box-shadow: none;
-}*/
+.thankYou h1{
+    color: #d20094;
+    margin-top: 3em;
+}
+
+.thankYou p{
+    line-height: 30pt;
+    max-width: 600px;
+    margin: 5em auto 0;
+    font-style: italic;
+}
+
+.thankYou p strong{
+    display: block;
+    font-style: normal;
+}
