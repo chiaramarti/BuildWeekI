@@ -29,7 +29,7 @@ header img{
     margin-inline-start:  8rem;
 }
   
-  /* main */
+/* main */
   
 main, footer{
     width: 70%;
@@ -61,6 +61,15 @@ h4{
 
 .stars svg {
     margin: 5px;
+    fill: #30235e;
+}
+
+.stars svg path:hover {
+    fill:#00FFFF
+}
+
+.stars svg .active {
+    fill:#00FFFF
 }
 
 
@@ -106,3 +115,17 @@ button:hover{
     cursor: pointer;
 }
   
+
+
+/* prova 
+.prova{
+    width: 300px;
+    height: 80px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(rgba(141, 0, 96, 0.211), rgba(141, 0, 125, 0.211)), radial-gradient(circle at top left, rgba(246, 246, 246, 0.633),#65656544);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-color: transparent;
+    box-shadow: none;
+}*/
