@@ -11,11 +11,10 @@ const sendCertificate = document.createElement("p")
 
 // per far incrementare il numero di percentuali in maniera dinamica
     let counter = 0;
-
     let percentage = 75; //valore da integrare dal fogliio domande
 
-// funzione percentuale
 
+// funzione percentuale
     const print = ((percentage) =>{
 
         if(percentage >= 60){
@@ -35,7 +34,8 @@ const sendCertificate = document.createElement("p")
             }
         }
     )
-    
+
+    // funzione percentuali dinamiche
     setInterval(       
         (percentage) => {
         // per cambiare il valore della percentuale di test superati
@@ -52,13 +52,14 @@ const sendCertificate = document.createElement("p")
     print(percentage)
 
 
+    // funzione adattamento livello percentuale 
     const strokeDashoffsetCss = ((percentage) => {
         let myRules = document.styleSheets[0].cssRules;
         console.log(myRules);
         let keyframes = myRules[18]; // a CSSKeyframesRule
         keyframes.appendRule(`100% {/* lo troviamo facendo 1000-1000x66.7 */stroke-dashoffset:${1000 - 1000 * (percentage/100)};}`);
         
-    }
+        }
     )
 
     strokeDashoffsetCss(percentage)

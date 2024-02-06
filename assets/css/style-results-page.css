@@ -84,7 +84,7 @@ header img{
 
 /* percentage */
 
-.circle{
+.circlePercetage{
     height: 390px;
     width: 390px;
     vertical-align: middle;
@@ -135,13 +135,13 @@ header img{
        
   }
 
-.circle h4{
+.circlePercetage h4{
     margin-block-start: 2.25rem;
     font-size: 1.25rem;
 
 }
 
-.circle h3{
+.circlePercetage h3{
     margin-block-end: 1.25rem;
     font-size: 1rem;
     font-weight: 600;
@@ -149,7 +149,7 @@ header img{
     font-family: 'Inter', sans-serif;
 }
 
-.circle p{
+.circlePercetage p{
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.659);
     margin-top: 1rem;
