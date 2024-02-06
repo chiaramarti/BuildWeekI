@@ -132,10 +132,7 @@ header img{
   }
 
   @keyframes anim {
-       100% {
-        /* lo troviamo facendo 1000-1000x66.7 */
-      stroke-dashoffset: 330;
-    }
+       
   }
 
 .circle h4{
@@ -155,12 +152,17 @@ header img{
 .circle p{
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.659);
+    margin-top: 1rem;
 }
 
 .description {
     margin-inline: auto;
-    padding-block: 0.5rem;
+    padding-block: 0.75rem;
     width: 200px;
+}
+
+.description-wrong {
+    margin-block: 3rem;
 }
 
 /* footer */
@@ -181,6 +183,7 @@ header img{
 #rate-us button:hover{
     background-color: #900080;
     box-shadow: 1px 2px 30px 7px  #3f2670;
+    cursor: pointer;
 }
 
 #rate-us button:focus{
