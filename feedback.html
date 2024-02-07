@@ -74,10 +74,10 @@
         </svg>
       </div>
 
-      <form id="feedbackForm">
+      <form id="feedbackForm" action="/action_page.php" method="post">
         <label for="yourWords">Leave us an open feedback about your experience so far</label>
-        <input required type="text" placeholder="Write your comment here" />
-        <button><a href="finished.html">Send feedback</a></button>
+        <input type="text" placeholder="Write your comment here" required />
+        <button type="submit"><a href="finished.html">Send feedback</a></button>
       </form>
     </main>
     <script src="./js/feedback.js"></script>
