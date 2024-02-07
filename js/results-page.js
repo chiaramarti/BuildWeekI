@@ -11,13 +11,14 @@ const sendCertificate = document.createElement("p")
 
 // per far incrementare il numero di percentuali in maniera dinamica
     let counter = 0;
-    let percentage = 75; //valore da integrare dal fogliio domande
-
+    let resultQuestion = 13;
+    let percentage = Math.floor(resultQuestion * 100 / 30); 
+console.log(percentage);
 
 // funzione percentuale
     const print = ((percentage) =>{
 
-        if(percentage >= 60){
+        if(percentage >= 60.0){
             description.innerText = "Congratulations!"
             wrongPass.innerText = "You passed the exam."
             sendCertificate.innerText = `We'll send you the certificate in few minutes.
@@ -43,10 +44,11 @@ const sendCertificate = document.createElement("p")
         if(counter === percentage){
             clearInterval();
         } else {
-            counter += 1;
+            counter += 0.1;
             correct.innerHTML = counter + "%";
             wrong.innerHTML = (100 - counter) + "%";
         }
+        
     }, 18, percentage)
 
     print(percentage)
