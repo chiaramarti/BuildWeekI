@@ -11,9 +11,8 @@ const sendCertificate = document.createElement("p")
 
 // per far incrementare il numero di percentuali in maniera dinamica
     let counter = 0.0;
-    let resultQuestion = 18;
-    let percentage = Math.floor(resultQuestion * 100 / 30); 
-console.log(percentage);
+    let resultQuestion = 14;
+    let percentage = Math.floor(resultQuestion * 100 / 30);
 
 // funzione percentuale
     const print = ((percentage) =>{
@@ -39,7 +38,6 @@ console.log(percentage);
     // funzione percentuali dinamiche
     setInterval(       
         () => {
-            console.log(percentage);
         // per cambiare il valore della percentuale di test superati
         // guardare nel css alla classe @@keyframes e lavorare col stroke-dashoffset: 330;
         if(counter === percentage){
@@ -66,3 +64,25 @@ console.log(percentage);
     )
 
     strokeDashoffsetCss(percentage)
+
+    // Funzione result question dinamic
+
+    const resultsCorrect = document.querySelector(".left")
+    console.log(resultsCorrect);
+    const resultsWrong = document.querySelector(".right")
+    console.log(resultsWrong);
+
+    const correctQues = document.createElement("p")
+    const wrongQues = document.createElement("p")
+
+    const functioneResultsQuestionCorrectAndWrong = (resultQuestion) => {
+        if (resultQuestion > 0){
+            correctQues.innerText = `${resultQuestion}/30 questions`
+            resultsCorrect.appendChild(correctQues)
+            wrongQues.innerText = `${30 - resultQuestion}/30 questions`
+            resultsWrong.appendChild(wrongQues)
+        }
+    }
+
+
+functioneResultsQuestionCorrectAndWrong(resultQuestion)
