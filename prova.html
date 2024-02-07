@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quiz-container"></div>
+
+    <script>
+      const quizData = {
+        response_code: 0,
+        results: [
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "What language does Node.js use?",
+            correct_answer: "JavaScript",
+            incorrect_answers: ["Java", "Java Source", "Joomla Source Code"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "In computing, what does MIDI stand for?",
+            correct_answer: "Musical Instrument Digital Interface",
+            incorrect_answers: [
+              "Musical Interface of Digital Instruments",
+              "Modular Interface of Digital Instruments",
+              "Musical Instrument Data Interface",
+            ],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question:
+              "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
+            correct_answer: "HD Graphics 500",
+            incorrect_answers: ["HD Graphics 700 ", "HD Graphics 600", "HD Graphics 7000"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "How long is an IPv6 address?",
+            correct_answer: "128 bits",
+            incorrect_answers: ["32 bits", "64 bits", "128 bytes"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+            correct_answer: "Apple",
+            incorrect_answers: ["Microsoft", "Atari", "Commodore"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "If you were to code software in this language you'd only be able to type 0's and 1's.",
+            correct_answer: "Binary",
+            incorrect_answers: ["JavaScript", "C++", "Python"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+            correct_answer: "1000",
+            incorrect_answers: ["512", "1024", "500"],
+          },
+          {
+            type: "multiple",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "What amount of bits commonly equals one byte?",
+            correct_answer: "8",
+            incorrect_answers: ["1", "2", "64"],
+          },
+          {
+            type: "boolean",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: "The Windows 7 operating system has six main editions.",
+            correct_answer: "True",
+            incorrect_answers: ["False"],
+          },
+          {
+            type: "boolean",
+            difficulty: "easy",
+            category: "Science: Computers",
+            question: 'In most programming languages, the operator ++ is equivalent to the statement "+= 1".',
+            correct_answer: "True",
+            incorrect_answers: ["False"],
+          },
+        ],
+      };
+
+      let currentQuestionIndex = 0;
+      const quizContainer = document.getElementById("quiz-container");
+
+      function displayQuestion(questionData) {
+        const questionHTML = `
+        <h2>${questionData.question}</h2>
+        ${
+          questionData.type === "multiple"
+            ? questionData.incorrect_answers
+                .map(
+                  (answer) =>
+                    `<button onclick="checkAnswer('${answer}', '${questionData.correct_answer}')">${answer}</button>`
+                )
+                .join("") +
+              `<button onclick="checkAnswer('${questionData.correct_answer}', '${questionData.correct_answer}')">${questionData.correct_answer}</button>`
+            : `<button onclick="checkAnswer('True', '${questionData.correct_answer}')">True</button><button onclick="checkAnswer('False', '${questionData.correct_answer}')">False</button>`
+        }
+    `;
+        quizContainer.innerHTML = questionHTML;
+      }
+
+      function checkAnswer(selectedAnswer, correctAnswer) {
+        const isCorrect = selectedAnswer === correctAnswer;
+        if (isCorrect) {
+          alert("Correct!");
+        } else {
+          alert(`Incorrect! The correct answer is: ${correctAnswer}`);
+        }
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.results.length) {
+          displayQuestion(quizData.results[currentQuestionIndex]);
+        } else {
+          alert("Quiz finished!");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        displayQuestion(quizData.results[currentQuestionIndex]);
+      });
+    </script>
+  </body>
+</html>
