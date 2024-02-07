@@ -10,8 +10,8 @@ const wrongPass = document.createElement("h3")
 const sendCertificate = document.createElement("p")
 
 // per far incrementare il numero di percentuali in maniera dinamica
-    let counter = 0;
-    let resultQuestion = 13;
+    let counter = 0.0;
+    let resultQuestion = 18;
     let percentage = Math.floor(resultQuestion * 100 / 30); 
 console.log(percentage);
 
@@ -38,13 +38,14 @@ console.log(percentage);
 
     // funzione percentuali dinamiche
     setInterval(       
-        (percentage) => {
+        () => {
+            console.log(percentage);
         // per cambiare il valore della percentuale di test superati
         // guardare nel css alla classe @@keyframes e lavorare col stroke-dashoffset: 330;
         if(counter === percentage){
             clearInterval();
         } else {
-            counter += 0.1;
+            counter += 1;
             correct.innerHTML = counter + "%";
             wrong.innerHTML = (100 - counter) + "%";
         }
