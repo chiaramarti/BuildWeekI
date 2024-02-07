@@ -15,12 +15,12 @@ body {
 }
 
 .timer {
-  width: 135px;
-  height: 135px;
+  width: 120px;
+  height: 121px;
   position: relative;
   position: fixed;
-  top: 4rem;
-  right: 7rem;
+  top: 3.3rem;
+  right: 10rem;
 }
 
 .circle {
@@ -40,7 +40,7 @@ body {
   border-radius: 50%;
   left: 0%;
   top: 0%;
-  border: 1.3rem solid transparent;
+  border: 1.2rem solid transparent;
 }
 
 .text {
@@ -54,11 +54,13 @@ body {
 }
 
 .n-text {
-  font-size: 0.8rem;
+  line-height: 1;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
 #n-16 {
+  line-height: 1;
   font-size: 3.5rem;
   color: rgb(220, 220, 226);
 }
@@ -123,9 +125,9 @@ body {
 .final {
   width: 100%;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 8rem;
   font-family: inter;
-  font-size: 16px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
