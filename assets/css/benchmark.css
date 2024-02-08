@@ -1,8 +1,12 @@
 body {
-  width: 100%;
-  margin: 0;
-  background-image: url("../img/bg.jpg");
+  background-image: url(../img/bg.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: "Outfit", sans-serif;
+  color: white;
 }
 
 #container {
@@ -10,10 +14,10 @@ body {
 }
 
 #container img {
-  margin: 3.5rem 7rem;
-  width: 13rem;
+  width: 11rem;
+  margin-block-start: 2rem;
+  margin-inline-start: 2rem;
 }
-
 .timer {
   width: 120px;
   height: 121px;
@@ -24,16 +28,10 @@ body {
 }
 
 .circle {
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(
-      #00ffff 65%,
-      #00ffff 35%,
-      rgba(255, 255, 255, 0.3) 35%
-    )
-    border-box;
-  -webkit-mask: /*4*/ conic-gradient(#fff 0 0) padding-box,
-    conic-gradient(#fff 0 0);
+  width: 120%;
+  height: 120%;
+  background: conic-gradient(#00ffff 65%, #00ffff 35%, rgba(255, 255, 255, 0.3) 35%) border-box;
+  -webkit-mask: /*4*/ conic-gradient(#fff 0 0) padding-box, conic-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/
   position: absolute;
@@ -44,7 +42,7 @@ body {
 }
 
 .text {
-  margin: 1.3rem;
+  margin: 0.8rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,7 +73,7 @@ body {
 
 #box-question {
   color: rgb(220, 220, 226);
-  font-size: 3.7rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   font-family: "Outfit", sans-serif;
 }
