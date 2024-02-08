@@ -7,18 +7,13 @@ const questions = {
       category: "Science: Computers",
       question: "What does LTS stand for in the software market?",
       correct_answer: "Long Term Support",
-      incorrect_answers: [
-        "Long Taco Service",
-        "Ludicrous Transfer Speed",
-        "Ludicrous Turbo Speed",
-      ],
+      incorrect_answers: ["Long Taco Service", "Ludicrous Transfer Speed", "Ludicrous Turbo Speed"],
     },
     {
       type: "boolean",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "Ada Lovelace is often considered the first computer programmer.",
+      question: "Ada Lovelace is often considered the first computer programmer.",
       correct_answer: "True",
       incorrect_answers: ["False"],
     },
@@ -50,8 +45,7 @@ const questions = {
       type: "boolean",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "The Python programming language gets its name from the British comedy group &quot;Monty Python.&quot;",
+      question: "The Python programming language gets its name from the British comedy group &quot;Monty Python.&quot;",
       correct_answer: "True",
       incorrect_answers: ["False"],
     },
@@ -59,8 +53,7 @@ const questions = {
       type: "boolean",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "The Windows ME operating system was released in the year 2000.",
+      question: "The Windows ME operating system was released in the year 2000.",
       correct_answer: "True",
       incorrect_answers: ["False"],
     },
@@ -76,8 +69,7 @@ const questions = {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "When Gmail first launched, how much storage did it provide for your email?",
+      question: "When Gmail first launched, how much storage did it provide for your email?",
       correct_answer: "1GB",
       incorrect_answers: ["512MB", "5GB", "Unlimited"],
     },
@@ -114,8 +106,7 @@ const questions = {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+      question: "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
       correct_answer: "Apple",
       incorrect_answers: ["Microsoft", "Atari", "Commodore"],
     },
@@ -123,8 +114,7 @@ const questions = {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "Which programming language shares its name with an island in Indonesia?",
+      question: "Which programming language shares its name with an island in Indonesia?",
       correct_answer: "Java",
       incorrect_answers: ["Python", "C", "Jakarta"],
     },
@@ -141,8 +131,7 @@ const questions = {
       difficulty: "easy",
       category: "Science: Computers",
       question: "What does the Prt Sc button do?",
-      correct_answer:
-        "Captures what&#039;s on the screen and copies it to your clipboard",
+      correct_answer: "Captures what&#039;s on the screen and copies it to your clipboard",
       incorrect_answers: [
         "Nothing",
         "Saves a .png file of what&#039;s on the screen in your screenshots folder in photos",
@@ -161,8 +150,7 @@ const questions = {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "The programming language &#039;Swift&#039; was created to replace what other programming language?",
+      question: "The programming language &#039;Swift&#039; was created to replace what other programming language?",
       correct_answer: "Objective-C",
       incorrect_answers: ["C#", "Ruby", "C++"],
     },
@@ -170,27 +158,17 @@ const questions = {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "The C programming language was created by this American computer scientist. ",
+      question: "The C programming language was created by this American computer scientist. ",
       correct_answer: "Dennis Ritchie",
-      incorrect_answers: [
-        "Tim Berners Lee",
-        "al-Khw\u0101rizm\u012b",
-        "Willis Ware",
-      ],
+      incorrect_answers: ["Tim Berners Lee", "al-Khw\u0101rizm\u012b", "Willis Ware"],
     },
     {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "In any programming language, what is the most common way to iterate through an array?",
+      question: "In any programming language, what is the most common way to iterate through an array?",
       correct_answer: "&#039;For&#039; loops",
-      incorrect_answers: [
-        "&#039;If&#039; Statements",
-        "&#039;Do-while&#039; loops",
-        "&#039;While&#039; loops",
-      ],
+      incorrect_answers: ["&#039;If&#039; Statements", "&#039;Do-while&#039; loops", "&#039;While&#039; loops"],
     },
     {
       type: "boolean",
@@ -206,11 +184,7 @@ const questions = {
       category: "Science: Computers",
       question: "What does CPU stand for?",
       correct_answer: "Central Processing Unit",
-      incorrect_answers: [
-        "Central Process Unit",
-        "Computer Personal Unit",
-        "Central Processor Unit",
-      ],
+      incorrect_answers: ["Central Process Unit", "Computer Personal Unit", "Central Processor Unit"],
     },
     {
       type: "multiple",
@@ -218,18 +192,13 @@ const questions = {
       category: "Science: Computers",
       question: "What does the computer software acronym JVM stand for?",
       correct_answer: "Java Virtual Machine",
-      incorrect_answers: [
-        "Java Vendor Machine",
-        "Java Visual Machine",
-        "Just Virtual Machine",
-      ],
+      incorrect_answers: ["Java Vendor Machine", "Java Visual Machine", "Just Virtual Machine"],
     },
     {
       type: "multiple",
       difficulty: "easy",
       category: "Science: Computers",
-      question:
-        "In &quot;Hexadecimal&quot;, what color would be displayed from the color code? &quot;#00FF00&quot;?",
+      question: "In &quot;Hexadecimal&quot;, what color would be displayed from the color code? &quot;#00FF00&quot;?",
       correct_answer: "Green",
       incorrect_answers: ["Red", "Blue", "Yellow"],
     },
@@ -257,11 +226,7 @@ const questions = {
       question:
         "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
       correct_answer: "HD Graphics 500",
-      incorrect_answers: [
-        "HD Graphics 700 ",
-        "HD Graphics 600",
-        "HD Graphics 7000",
-      ],
+      incorrect_answers: ["HD Graphics 700 ", "HD Graphics 600", "HD Graphics 7000"],
     },
     {
       type: "boolean",
@@ -277,11 +242,7 @@ const questions = {
       category: "Science: Computers",
       question: "In computing, what does LAN stand for?",
       correct_answer: "Local Area Network",
-      incorrect_answers: [
-        "Long Antenna Node",
-        "Light Access Node",
-        "Land Address Navigation",
-      ],
+      incorrect_answers: ["Long Antenna Node", "Light Access Node", "Land Address Navigation"],
     },
     {
       type: "multiple",
@@ -289,11 +250,7 @@ const questions = {
       category: "Science: Computers",
       question: "In web design, what does CSS stand for?",
       correct_answer: "Cascading Style Sheet",
-      incorrect_answers: [
-        "Counter Strike: Source",
-        "Corrective Style Sheet",
-        "Computer Style Sheet",
-      ],
+      incorrect_answers: ["Counter Strike: Source", "Corrective Style Sheet", "Computer Style Sheet"],
     },
   ],
 };
@@ -325,17 +282,12 @@ function displayQuestion() {
   questionElement.appendChild(questionText);
 
   // Aggiunge le risposte correnti
-  const answers = [
-    ...currentQuestion.incorrect_answers,
-    currentQuestion.correct_answer,
-  ];
+  const answers = [...currentQuestion.incorrect_answers, currentQuestion.correct_answer];
   answers.sort(() => Math.random() - 0.5); // Mischia le risposte
   answers.forEach((answer) => {
     const responseButton = document.createElement("button");
     responseButton.innerHTML = answer;
-    responseButton.addEventListener("click", () =>
-      checkAnswer(answer === currentQuestion.correct_answer)
-    );
+    responseButton.addEventListener("click", () => checkAnswer(answer === currentQuestion.correct_answer));
     const responseIndex = answers.indexOf(answer) % 2;
     responseElements[responseIndex].appendChild(responseButton);
   });
@@ -343,19 +295,18 @@ function displayQuestion() {
 
 // Funzione per verificare la risposta selezionata dall'utente
 function checkAnswer(isCorrect) {
+  clearInterval(timer); // Stop the timer
   if (isCorrect) {
     alert("Correct answer!");
     correctAnswers.push(questions.results[currentQuestionIndex].correct_answer); // Aggiunge la risposta corretta all'array
   } else {
-    alert(
-      "Incorrect answer. The correct answer is: " +
-        questions.results[currentQuestionIndex].correct_answer
-    );
+    alert("Incorrect answer. The correct answer is: " + questions.results[currentQuestionIndex].correct_answer);
   }
 
   currentQuestionIndex++;
 
   if (currentQuestionIndex < questions.results.length) {
+    startTimer(); // Start a new timer
     displayQuestion();
   } else {
     alert("End of questions!");
@@ -364,14 +315,7 @@ function checkAnswer(isCorrect) {
   }
 }
 
-// Avvia il gioco mostrando la prima domanda
-displayQuestion();
-
-// Avvia il gioco mostrando la prima domanda
-
 //TIMER
-
-displayQuestion();
 
 function startTimer() {
   const countdownElement = document.getElementById("n-16");
@@ -384,10 +328,11 @@ function startTimer() {
 
   let progress = 0; // Inizializza la variabile di progresso
 
-  let timer = setInterval(() => {
+  timer = setInterval(() => {
     countdown++;
     if (countdown > maxCountdown) {
       // Se il countdown supera il massimo, ripartiamo da 0
+      checkAnswer();
       countdown = 0;
     }
     countdownElement.textContent = countdown; // Aggiorna il valore del countdown
@@ -400,4 +345,6 @@ function startTimer() {
   }, timerInterval);
 }
 
+// avvia il gioco
 startTimer();
+displayQuestion();
