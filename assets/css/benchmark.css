@@ -101,6 +101,7 @@ body {
   font-size: 1.2rem;
   margin-top: 1.5rem;
   font-weight: bold;
+  height: 100px;
 }
 
 #response button:hover {
@@ -117,24 +118,28 @@ body {
 }
 
 .response-b {
-  width: 420px;
+  width: 500px;
   display: inline-block;
   margin: 2rem;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .final {
   width: 100%;
   text-align: center;
-  margin-top: 8rem;
+  position: absolute;
+  bottom: 3rem;
   font-family: inter;
-  font-size: 1.4rem;
   font-weight: bold;
 }
 
 .final div {
-  color: rgb(220, 220, 226);
+  color: #900080;
+  font-size: 1.6rem;
 }
 
 .final span {
-  color: #900080;
+  color: rgb(220, 220, 226);
+  font-size: 1.4rem;
 }
