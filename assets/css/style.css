@@ -2,10 +2,11 @@ body {
   background-image: url(/assets/img/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
-  margin: 50px;
+  margin: 80px;
   color: white;
   font-family: "Outfit", sans-serif;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -14,7 +15,7 @@ img {
   max-width: 150px;
 }
 .titoli {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
 }
 .titoli span.thin {
@@ -30,15 +31,18 @@ img {
   color: #c2138c;
   font-size: 30px;
   margin: 0;
+  font-family: Inter;
 }
+
 .descrizione {
   height: 80px;
-  width: 400px;
+  width: 600px;
 }
 
 .punti {
   height: 150px;
   margin-top: 20px;
+  font-family: Inter;
 }
 
 .punti ul {
@@ -58,6 +62,7 @@ img {
 }
 #promessa {
   margin-right: 10px;
+  font-family: Inter;
 }
 
 .prosegui a {
