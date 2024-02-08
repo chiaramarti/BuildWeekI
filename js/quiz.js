@@ -261,9 +261,9 @@ const getResultPage = lengthArray => {
   const body = document.querySelector("body");
   const header = document.querySelector("header");
   header.remove();
-  header.innerHTML = `<div id="container">
-  <img src="assets/img/epicode_logo.png" alt="logo" />
-</div>`;
+  header.innerHTML = `<header>
+  <img src="./assets/img/epicode_logo.png" alt="logo-epicode" />
+</header>`;
   body.appendChild(header);
   const main = document.querySelector("main");
   const centralClass = document.querySelector(".central");
