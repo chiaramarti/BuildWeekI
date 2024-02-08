@@ -70,11 +70,15 @@ _____________________________
     fill: #30235e;
 }
 
-.stars svg path:hover {
-    fill:#00FFFF
+.bad .active {
+    fill:#ff397f
 }
 
-.stars svg .active {
+.mid .active {
+    fill:#ff25d3
+}
+
+.good .active {
     fill:#00FFFF
 }
 
