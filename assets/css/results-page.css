@@ -1,191 +1,194 @@
-*{
-  box-sizing: border-box;  
+* {
+  box-sizing: border-box;
 }
 
 /* base */
 
-body, h1, h2, h3, h4, h5, h6, p, div{
-margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
 }
 
-body{
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* font-family: 'Inter', sans-serif; */
-    font-family: 'Outfit', sans-serif;
-    color: white;
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: "Outfit", sans-serif;
+  color: white;
 }
-
 
 /* header */
 
-header img{
-    width: 11rem;
-    margin-block-start:  2rem;
-    margin-inline-start:  6rem;
+header img {
+  width: 11rem;
+  margin-block-start: 2rem;
+  margin-inline-start: 6rem;
 }
 
 /* main */
 
-#title-result, #rate-us{
-    width: 70%;
-    margin-inline: auto;
-    text-align: center;
+#title-result,
+#rate-us {
+  width: 70%;
+  margin-inline: auto;
+  text-align: center;
 }
 
-.container-results{
-    display: inline-block;
-    width: 30%;
-    margin-block-start: 3rem;
+.container-results {
+  display: inline-block;
+  width: 30%;
+  margin-block-start: 3rem;
 }
 
-#title-result h1{
-    font-size: 3rem;
-    margin-block-start: 4rem;
+#title-result h1 {
+  font-size: 3rem;
+  margin-block-start: 4rem;
 }
 
-#title-result h4{
-    font-size: 1rem;
-    font-weight: 400;
+#title-result h4 {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* correct/wrong */
 
-.container-results h2{
-    font-size: 3rem;
-    font-weight: 400;
-    margin-block: 0;
+.container-results h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-block: 0;
 }
 
-.container-results h3, #number{
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-block: 0;
+.container-results h3,
+#number {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-block: 0;
 }
 
-.container-results p{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-block: 0;
+.container-results p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block: 0;
 }
 
-.left{
-    text-align: left;
-    vertical-align: middle;
+.left {
+  text-align: left;
+  vertical-align: middle;
 }
 
-.right{
-    text-align: right;
-    vertical-align: middle;
+.right {
+  text-align: right;
+  vertical-align: middle;
 }
 
 /* percentage */
 
-.circlePercetage{
-    height: 390px;
-    width: 390px;
-    vertical-align: middle;
-    position: relative;
+.circlePercetage {
+  height: 390px;
+  width: 390px;
+  vertical-align: middle;
+  position: relative;
 }
 
 .pass {
-    margin-inline: auto;
-    border-radius: 50%;
-    height: 379px;
-    width: 379px;
-    border: 65px solid #900080;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(0,0,0,0.15);
-  }
+  margin-inline: auto;
+  border-radius: 50%;
+  height: 379px;
+  width: 379px;
+  border: 65px solid #00ffff;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+}
 
-.fail{
-    border-radius: 50%;
-    height: 319px;
-    width: 319px;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.15),
-                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-                -0.5px -0.5px 0px rgba(255,255,255,1),
-                0px 12px 10px -10px rgba (0,0,0,0.05);
-  }
+.fail {
+  border-radius: 50%;
+  height: 319px;
+  width: 319px;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.15), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba (0, 0, 0, 0.05);
+}
 
 /* animation */
 
-  circle {
-    fill: none;
-    stroke: #00ffff;
-    stroke-width: 67px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: anim 2s linear forwards;
-    
-      }
-
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  @keyframes anim {
-       
-  }
-
-.circlePercetage h4{
-    margin-block-start: 2.25rem;
-    font-size: 1.25rem;
-
+circle {
+  fill: none;
+  stroke: #900080;
+  stroke-width: 67px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: anim 2s linear forwards;
 }
 
-.circlePercetage h3{
-    margin-block-end: 1.25rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #00ffff;
-    font-family: 'Inter', sans-serif;
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.circlePercetage p{
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.659);
-    margin-top: 1rem;
+@keyframes anim {
+}
+
+.circlePercetage h4 {
+  margin-block-start: 2.25rem;
+  font-size: 1.25rem;
+}
+
+.circlePercetage h3 {
+  margin-block-end: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ffff;
+  font-family: "Inter", sans-serif;
+}
+
+.circlePercetage p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.659);
+  margin-top: 1rem;
 }
 
 .description {
-    margin-inline: auto;
-    padding-block: 0.75rem;
-    width: 200px;
+  margin-inline: auto;
+  padding-block: 0.75rem;
+  width: 200px;
 }
 
 .description-wrong {
-    margin-block: 3rem;
+  margin-block: 3rem;
 }
 
 /* footer */
 
-#rate-us button{
-    font-size: 1.25rem;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
-    margin-block: 4rem;
-    padding-block: 1rem;
-    padding-inline: 4rem;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    box-shadow: 1px 2px 18px 7px  #3f2670;
+#rate-us button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-block: 4rem;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+  background-color: transparent;
+  border: 2px solid white;
+  box-shadow: 1px 2px 18px 7px #3f2670;
 }
 
-#rate-us button:hover{
-    background-color: #900080;
-    box-shadow: 1px 2px 30px 7px  #3f2670;
-    cursor: pointer;
+#rate-us button:hover {
+  background-color: #900080;
+  box-shadow: 1px 2px 30px 7px #3f2670;
+  cursor: pointer;
 }
 
-#rate-us button:focus{
-
+#rate-us a {
+  color: white;
+  text-decoration: none;
 }
