@@ -298,10 +298,12 @@ const getResultPage = lengthArray => {
   body.appendChild(main);
 
   const footer = document.querySelector("footer");
+  const footerClass = document.querySelector(".final");
+  console.log(footerClass);
   footer.remove();
-  footer.innerHTML = `<footer id="rate-us">
-  <button type="button"><a href="feedback.html">RATE US</a></button>
-</footer>`;
+  footer.innerHTML = `<button type="button"><a href="feedback.html">RATE US</a></button>`;
+  footerClass.classList.remove("final");
+  footerClass.setAttribute("id", "rate-us");
   body.appendChild(footer);
 
   // costanti utili per la funzione della percentuale
