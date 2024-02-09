@@ -30,7 +30,7 @@ body {
 .circle {
   width: 120%;
   height: 120%;
-  background: conic-gradient(#00ffff 65%, #00ffff 35%, rgba(255, 255, 255, 0.3) 35%) border-box;
+  background: conic-gradient(#00ffff 100%, rgba(255, 255, 255, 0.3)) border-box;
   -webkit-mask: /*4*/ conic-gradient(#fff 0 0) padding-box, conic-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
   mask-composite: exclude; /*5*/

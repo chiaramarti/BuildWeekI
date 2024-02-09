@@ -256,7 +256,7 @@ const questions = {
 
 // RESULTS PAGE JS
 
-const getResultPage = (lengthArray) => {
+const getResultPage = lengthArray => {
   const body = document.querySelector("body");
   const header = document.querySelector("header");
   header.remove();
@@ -320,7 +320,7 @@ const getResultPage = (lengthArray) => {
   let percentage = Math.floor((resultQuestion * 100) / 30);
 
   // funzione percentuale
-  const print = (percentage) => {
+  const print = percentage => {
     if (percentage >= 60.0) {
       description.innerText = "Congratulations!";
       wrongPass.innerText = "You passed the exam.";
@@ -358,7 +358,7 @@ const getResultPage = (lengthArray) => {
   print(percentage);
 
   // funzione adattamento livello percentuale
-  const strokeDashoffsetCss = (percentage) => {
+  const strokeDashoffsetCss = percentage => {
     let percentageWrong = 100 - percentage;
     let myRules = document.styleSheets[1].cssRules;
     console.log(myRules);
@@ -379,7 +379,7 @@ const getResultPage = (lengthArray) => {
   const correctQues = document.createElement("p");
   const wrongQues = document.createElement("p");
 
-  const functioneResultsQuestionCorrectAndWrong = (resultQuestion) => {
+  const functioneResultsQuestionCorrectAndWrong = resultQuestion => {
     if (resultQuestion > 0) {
       correctQues.innerText = `${resultQuestion}/30 questions`;
       resultsCorrect.appendChild(correctQues);
@@ -402,7 +402,7 @@ function displayQuestion() {
 
   // Pulisce il contenuto precedente
   questionElement.innerHTML = "";
-  responseElements.forEach((responseElement) => {
+  responseElements.forEach(responseElement => {
     responseElement.innerHTML = "";
   });
 
@@ -421,7 +421,7 @@ function displayQuestion() {
   // Aggiunge le risposte correnti
   const answers = [...currentQuestion.incorrect_answers, currentQuestion.correct_answer];
   answers.sort(() => Math.random() - 0.5); // Mischia le risposte
-  answers.forEach((answer) => {
+  answers.forEach(answer => {
     const responseButton = document.createElement("button");
     responseButton.innerHTML = answer;
     responseButton.addEventListener("click", () => checkAnswer(answer === currentQuestion.correct_answer));
@@ -462,8 +462,8 @@ displayQuestion();
 
 function startTimer() {
   const countdownElement = document.getElementById("n-16");
-  let countdown = 0; // Inizia da 0
-  const maxCountdown = 60;
+  let countdown = 60; // Inizia da 0
+  const minCountdown = -1;
 
   const circle = document.querySelector(".circle"); // Seleziona il cerchio timer
 
@@ -472,16 +472,16 @@ function startTimer() {
   let progress = 0; // Inizializza la variabile di progresso
 
   timer = setInterval(() => {
-    countdown++;
-    if (countdown > maxCountdown) {
+    countdown--;
+    if (countdown === minCountdown) {
       // Se il countdown supera il massimo, ripartiamo da 0
       checkAnswer();
-      countdown = 0;
+      countdown = 59;
     }
     countdownElement.textContent = countdown; // Aggiorna il valore del countdown
 
     // Calcola il progresso della barra di caricamento
-    progress = (countdown / maxCountdown) * 100;
+    progress = (countdown / 59) * 100;
 
     // Imposta la larghezza della barra di caricamento
     circle.style.background = `conic-gradient(#00ffff ${progress}%, rgba(255, 255, 255, 0.3) ${progress}%) border-box`;
