@@ -18,11 +18,13 @@ stars.forEach((star, index1) => {
 });
 
 // all' onclick prendo il valore
-let rate = function rateExperience(value) {
-  return value;
-};
+var rate = 0;
 
-console.log(rate(value));
+function rateExperience(x) {
+  rate += x;
+}
+
+console.log(rate);
 // creo l'ultima pagina
 function createLastPage(rate) {
   console.log(rate); // Debugging statement
