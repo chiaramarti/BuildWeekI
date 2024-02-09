@@ -2,19 +2,24 @@ body {
   background-image: url(/assets/img/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
-  margin: 80px;
+  margin: 0;
   color: white;
   font-family: "Outfit", sans-serif;
 }
 
 img {
-  max-width: 100%;
+  width: 11rem;
+  margin-block-start: 2rem;
+  margin-inline-start: 2rem;
+}
+
+.main-index {
+  width: 80%;
+  margin-inline: auto;
 }
 
 .logo1 {
-  max-width: 150px;
-  position: relative;
-  top: -40px;
+  width: 100%;
 }
 
 .titoli {
@@ -39,11 +44,13 @@ img {
 .titoli span.bold {
   font-weight: bold;
   display: block;
+  line-height: 1rem;
 }
 
 .descrizione {
   height: 80px;
   width: 600px;
+  font-size: 1.3rem;
 }
 
 .punti {
@@ -68,6 +75,7 @@ img {
   float: right;
   margin-left: 200px;
 }
+
 #promessa {
   margin-right: 10px;
   appearance: none;
