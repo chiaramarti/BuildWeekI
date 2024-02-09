@@ -149,3 +149,12 @@ ___________________________________________ */
     display: block;
     font-style: normal;
 }
+
+
+/*_____________________________________
+_________ button star _________________*/
+
+.stars button{
+    background-color: transparent;
+    border: none;
+}
